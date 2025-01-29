@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <meta name="author" content="Zayneb Lahbacha">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../HTML/Style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../HTML/Home.html">Zayneb Lahbacha</a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Education">Education</a></li>
+                <li> <a href="#Professional">Professional Experiences</a></li>
+            </ul>
+        </div>
+    </header>
+    
+<div class="Home">  </div> 
+    <div class="social-buttons">
+       
+        <a href="https://www.linkedin.com/in/zeineb-lahbacha-66030a28a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="btn">
+            <img src="../IMAGES/linkdin.png" alt="LinkedIn">
+        </a>
+        
+        <a href="https://www.instagram.com/zeineb_lahbacha?igsh=cjdhdXVzeHVxeHU%3D&utm_source=qr" target="_blank" class="btn">
+            <img src="../IMAGES/instagramme.png" alt="Instagram">
+        </a>
+        <a href="https://mail.google.com/mail/?view=cm&to=zeineblahbacha@gmail.com" target="_blank" class="btn">
+            <img src="../IMAGES/mail.jpg" alt="Instagram">
+        </a>
+    </div>
+</div>
+<div >
+    <button class="download-btn"  onclick="downloadCV()">📩 Download my CV</button>
+    <script src="../HTML/Script.js"></script>
+</div>
+       
+    <div class="container section" id="about">
+        <div class="image-left">
+            <img src="../IMAGES/me.png" alt="about me">
+        </div>
+        <div class="about-me-right">
+            <p class="icon age">Age : 20</p>
+            <p class="icon email">Email : zeineblahbacha@gmail.com</p>
+            <p class="icon languages">Languages: Arabic, French, English, Turkish</p>
+            <p class="icon address">Adresse : Menzel Temim, Nabeul, Tunis</p>
+        </div>
+   </div>
+   <div id="Education" class="section">
+    <h1>Education</h1>
+    <div class="education-card">
+        <h3>Bachelor's Degree in Business Computing</h3>
+        <p>ESEN Higher School of Digital Economics</p>
+        <p>09-2023-06-2026 <br>Tunis</p>
+        
+    </div>
+    <div class="education-card">
+        <h3>High School Diploma in Economics and Management</h3>
+        <p>Taieb Mhiri High School</p>
+        <p>09-2022-06-2023<br>Tunis</p>
+        
+    </div>
+
+   </div>
+    <div id="Professional" class="section">
+        <h1>Professional Experiences</h1>
+        <div class="education-card">
+            <h3>
+                Worker Internship
+            </h3>
+            <p>07-2024 08-2024, BIAT, Nabeul,Tunis</p>
+
+        </div>
+    </div>
+    <div id="Mycertificates" class="section">
+        <h3>my certificates</h3>
+        <div class="certificates ">
+            <img src="../IMAGES/certif intermediat.png">
+            <img src="../IMAGES/certif sql.png">
+            <img src="../IMAGES/certificate.png">
+            <img src="../IMAGES/certif enactus.JPG">
+        </div>
+    
+
+    </div>
+    <footer>
+        <p>© 2025 Zeineb Lahbacha. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll('.section');
+    
+            function revealSections() {
+                sections.forEach(section => {
+                    const sectionTop = section.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+    
+                    if (sectionTop < windowHeight * 0.85) {
+                        section.classList.add('visible');
+                    }
+                });
+            }
+    
+            window.addEventListener('scroll', revealSections);
+            revealSections(); 
+        });
+    </script>
+</body>
+</html>
